@@ -1,4 +1,4 @@
-# CSS Battle: 20/10/2024
+# CSS Battle: 2024/10/20
 
 ## Stats
 
