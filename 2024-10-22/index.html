@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/10/22</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background: #434b92;
+      }
+
+      div {
+        position: relative;
+        width: 190px;
+        height: 100px;
+        background: #f3ac3c;
+
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 50px;
+          width: 20px;
+          top: 50%;
+          background: inherit;
+          transform: translate(0%, -50%);
+        }
+
+        &::before {
+          left: -10.5%;
+        }
+
+        &::after {
+          right: -10.5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
