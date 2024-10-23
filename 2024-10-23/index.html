@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/10/23</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background: #328fc1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      div {
+        height: 90px;
+        width: 90px;
+        background: #243d83;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          height: inherit;
+          width: inherit;
+          background: #eeb850;
+          border-radius: 50%;
+        }
+      }
+      div:nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+
+        &::after {
+          top: 50%;
+        }
+      }
+      div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+
+        &::after {
+          left: 50%;
+        }
+      }
+      div:nth-child(3) {
+        grid-column: 3;
+        grid-row: 2;
+
+        &::after {
+          right: 50%;
+        }
+      }
+      div:nth-child(4) {
+        grid-column: 2;
+        grid-row: 3;
+
+        &::after {
+          bottom: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>
