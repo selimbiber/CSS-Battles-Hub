@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/10/24</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background: #434b92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      main {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        place-items: center;
+      }
+      div {
+        background: #f3ac3c;
+        position: relative;
+
+        &:nth-child(1) {
+          grid-row: 1;
+          margin-bottom: 15px;
+
+          &::before {
+            bottom: 47px;
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          width: 100px;
+          height: 47px;
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background: inherit;
+            width: 50px;
+            min-height: 100dvh;
+            transform: translate(50%, 0);
+          }
+        }
+
+        &:nth-child(2) {
+          width: 100%;
+          height: 50px;
+          grid-row: 2;
+
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 190px;
+            height: 25px;
+            background: inherit;
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+
+          &::before {
+            top: 50px;
+          }
+
+          &::after {
+            bottom: 50px;
+          }
+        }
+        &:nth-child(3) {
+          grid-row: 3;
+          margin-top: 16.7px;
+
+          &::before {
+            top: 47px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>
