@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/10/25</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background: #62306d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 44px;
+      }
+      div {
+        width: 100px;
+        height: 80px;
+        border-radius: 50%;
+        background: #f7ec7d;
+        position: relative;
+
+        &:first-child::before {
+          content: "";
+          display: block;
+          position: absolute;
+          background: #62306d;
+          height: 60px;
+          width: 50px;
+          border-radius: 50%;
+          top: 13%;
+          left: 72%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+</html>
