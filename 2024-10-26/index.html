@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/10/26</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background: #191210;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: 1;
+          background: inherit;
+          height: calc(100dvh - 75px * 2);
+          width: calc(100% - 75px * 2);
+          border-bottom-left-radius: 25px;
+          border-top-right-radius: 25px;
+          top: 75px;
+          left: 75px;
+        }
+      }
+      div {
+        background: #84271c;
+        position: absolute;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          background: #84271c;
+          height: 75px;
+          width: 75px;
+          border-radius: 50%;
+        }
+      }
+      .vertical {
+        width: 75px;
+        height: 166px;
+      }
+      .horizantal {
+        width: 200px;
+        height: 100px;
+      }
+      .top-right {
+        top: 0;
+        right: 0;
+      }
+      .bottom-left {
+        bottom: 0;
+        left: 0;
+      }
+      .top-right.horizantal::after {
+        left: -20%;
+        top: 0;
+      }
+      .top-right.vertical::after {
+        bottom: -20%;
+      }
+      .bottom-left.vertical::after {
+        top: -20%;
+      }
+      .bottom-left.horizantal::after {
+        right: -20%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-right vertical"></div>
+    <div class="top-right horizantal"></div>
+    <div class="bottom-left vertical"></div>
+    <div class="bottom-left horizantal"></div>
+  </body>
+</html>
