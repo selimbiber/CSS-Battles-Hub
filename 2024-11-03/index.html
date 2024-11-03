@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/11/03</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100dvh;
+        background: #2d3464;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+      }
+      div:first-of-type {
+        width: 120px;
+        height: 120px;
+        background: #c0d6e7;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          top: 0;
+          transform: translate(0%, 25%);
+          background: inherit;
+          border-radius: 50%;
+        }
+
+        &::before {
+          left: -20px;
+        }
+
+        &::after {
+          right: -20px;
+        }
+      }
+      div:last-of-type,
+      div:last-of-type::before,
+      div:last-of-type::after {
+        box-sizing: border-box;
+        position: relative;
+        width: 42px;
+        height: 60px;
+        background: #2d3464;
+        border-left: 16px solid #d95362;
+        border-right: 16px solid #d95362;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+        }
+
+        &::before {
+          left: 10px;
+        }
+
+        &::after {
+          right: -94px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>
