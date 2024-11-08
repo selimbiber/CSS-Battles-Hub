@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/11/08</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      *::before,
+      *::after {
+        content: "";
+        position: absolute;
+      }
+      body {
+        min-height: 100dvh;
+        background: #fade8b;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        position: relative;
+
+        &::before,
+        &::after {
+          top: -30px;
+          left: -130px;
+        }
+
+        &::before {
+          height: 150px;
+          width: 70px;
+          background: #fade8b;
+          z-index: 1;
+        }
+
+        &::after {
+          height: 30px;
+          width: 130px;
+          background: #61a74e;
+        }
+      }
+      div {
+        position: relative;
+        background: inherit;
+        height: 120px;
+        width: 120px;
+        border: 45px solid #61a74e;
+        border-radius: 50%;
+
+        &::before,
+        &::after {
+          top: -45px;
+          height: inherit;
+          width: inherit;
+          border: 45px solid #61a74e;
+          border-radius: inherit;
+        }
+
+        &::before {
+          left: -165px;
+        }
+        &::after {
+          right: -165px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+    </main>
+  </body>
+</html>
