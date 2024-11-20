@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/11/20</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        padding: 0;
+        margin: 0;
+        background: #fade8b;
+        display: grid;
+        place-items: center;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background: #61a74e;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100px;
+          width: 100px;
+          background: #3f7331;
+          bottom: 0;
+          right: 0;
+        }
+
+        &::after {
+          background: #fade8b;
+          width: 170px;
+          rotate: 315deg;
+          bottom: -35px;
+          right: -70px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
