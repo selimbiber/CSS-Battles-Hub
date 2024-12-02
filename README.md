@@ -1,2 +1,1 @@
-# CSS-Battles-Hub
-https://cssbattle.dev/
+# [CSS Battles Hub](https://cssbattle.dev/)
