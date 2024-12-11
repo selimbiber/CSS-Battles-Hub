@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/12/11</title>
+    <style>
+      body,
+      main {
+        display: grid;
+        place-items: center;
+      }
+      body {
+        min-height: 100dvh;
+        padding: 0;
+        margin: 0;
+        background: #fff6d2;
+      }
+      main {
+        box-sizing: border-box;
+        height: 180px;
+        width: 180px;
+        border: 14px solid #67645e;
+        border-radius: 20px;
+        position: relative;
+      }
+      .center,
+      div::before,
+      div::after {
+        content: "";
+        width: 15px;
+        height: 20px;
+        background: #e88933;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+      }
+      .top.center {
+        top: -34px;
+
+        &::before {
+          left: -30px;
+        }
+        &::after {
+          right: -30px;
+        }
+      }
+      .bottom.center {
+        bottom: -34px;
+        rotate: 180deg;
+
+        &::before {
+          left: -30px;
+        }
+        &::after {
+          right: -30px;
+        }
+      }
+      .left.center {
+        left: -31px;
+        rotate: -90deg;
+
+        &::before {
+          left: -30px;
+        }
+        &::after {
+          right: -30px;
+        }
+      }
+      .right.center {
+        right: -31px;
+        rotate: 90deg;
+
+        &::before {
+          right: -30px;
+        }
+        &::after {
+          left: -30px;
+        }
+      }
+      .top.corner {
+        &::before,
+        &::after {
+          top: -34px;
+        }
+        &::before {
+          top: 7px;
+        }
+      }
+      .top.left.corner {
+        &::before {
+          left: -31px;
+          rotate: -90deg;
+        }
+        &::after {
+          left: 8px;
+        }
+      }
+      .top.right.corner {
+        &::before {
+          right: -31px;
+          rotate: 90deg;
+        }
+        &::after {
+          right: 8px;
+        }
+      }
+      .bottom.corner {
+        &::before,
+        &::after {
+          bottom: -34px;
+        }
+        &::before {
+          bottom: 7px;
+        }
+        &::after {
+          rotate: 180deg;
+        }
+      }
+      .bottom.left.corner {
+        &::before {
+          left: -31px;
+          rotate: -90deg;
+        }
+        &::after {
+          left: 8px;
+        }
+      }
+      .bottom.right.corner {
+        &::before {
+          bottom: 7px;
+          right: -31px;
+          rotate: 90deg;
+        }
+        &::after {
+          right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="top center"></div>
+      <div class="top left corner"></div>
+      <div class="top right corner"></div>
+      <div class="left center"></div>
+      <div class="right center"></div>
+      <div class="bottom left corner"></div>
+      <div class="bottom right corner"></div>
+      <div class="bottom center"></div>
+    </main>
+  </body>
+</html>
