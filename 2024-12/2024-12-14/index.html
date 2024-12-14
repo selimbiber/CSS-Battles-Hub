@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/12/14</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        padding: 0;
+        margin: 0;
+        background: #2f5a76;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        width: 210px;
+        height: 210px;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 0;
+          width: 0;
+          border-left: 70px solid transparent;
+          border-right: 70px solid transparent;
+          border-top: 70px solid #f5bb60;
+        }
+        &::before {
+          rotate: 180deg;
+          top: 35px;
+          left: 35px;
+        }
+        &::after {
+          bottom: 35px;
+          right: 35px;
+        }
+      }
+      div::before,
+      div::after {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 100px;
+        background: #f5bb60;
+      }
+      div::before {
+        left: -5px;
+      }
+      div::after {
+        right: -5px;
+      }
+      div:first-of-type {
+        &::before,
+        &::after {
+          top: 30px;
+        }
+        &::before {
+          rotate: -45deg;
+        }
+        &::after {
+          rotate: 45deg;
+        }
+      }
+      div:last-of-type {
+        &::before,
+        &::after {
+          bottom: 30px;
+        }
+        &::before {
+          rotate: 45deg;
+        }
+        &::after {
+          rotate: -45deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>
