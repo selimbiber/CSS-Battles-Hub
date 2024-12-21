@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024/12/21</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        padding: 0;
+        margin: 0;
+        background: #ea9a52;
+        display: grid;
+        place-items: center;
+      }
+      div {
+        position: relative;
+        box-sizing: border-box;
+        width: 160px;
+        height: 160px;
+        border: 30px solid #435998;
+        border-radius: 50%;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 110px;
+          width: 30px;
+          background: #435998;
+          top: -96px;
+          left: 35px;
+          rotate: 45deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
