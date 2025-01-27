@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/01/27</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        padding: 0;
+        margin: 0;
+        background: #469dba;
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        position: relative;
+        width: 400px;
+        height: 270px;
+      }
+      div::before,
+      div::after {
+        content: "";
+        position: absolute;
+        background: #f5e3b5;
+        height: 30px;
+      }
+      div::after {
+        right: 0;
+      }
+      .narrow::before,
+      .narrow::after {
+        width: 60px;
+      }
+      .wide::before,
+      .wide::after {
+        width: 120px;
+      }
+      .second::before,
+      .second::after {
+        top: 60px;
+      }
+      .third::before,
+      .third::after {
+        top: 120px;
+      }
+      .fourth::before,
+      .fourth::after {
+        top: 180px;
+      }
+      .fifth::before,
+      .fifth::after {
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="first narrow"></div>
+      <div class="second wide"></div>
+      <div class="third narrow"></div>
+      <div class="fourth wide"></div>
+      <div class="fifth narrow"></div>
+    </main>
+  </body>
+</html>
