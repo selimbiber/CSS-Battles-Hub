@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/02/01</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        background: #ebe77e;
+        display: grid;
+        place-items: center;
+      }
+      div {
+        width: 220px;
+        height: 140px;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          background: #de817e;
+          height: 70px;
+          width: 160px;
+          left: 30px;
+        }
+        &::before {
+          transform: skew(-40deg);
+        }
+        &::after {
+          transform: skew(40deg);
+          bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
