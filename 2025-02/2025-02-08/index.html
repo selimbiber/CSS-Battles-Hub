@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/02/08</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        background: #edecc1;
+        display: grid;
+        place-items: center;
+      }
+      div {
+        width: 250px;
+        height: 250px;
+        box-sizing: border-box;
+        border: 50px solid #cc5252;
+        border-radius: 50%;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 180px;
+          width: 50px;
+          background: #cc5252;
+          top: -10px;
+          left: 40px;
+          transform: rotate(60deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
