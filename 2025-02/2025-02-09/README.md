@@ -4,7 +4,7 @@
 
 ### Average Rating = 69.55% Match
 
-### My Rating = % Match
+### My Rating = 100% Match
 
 ## Images
 

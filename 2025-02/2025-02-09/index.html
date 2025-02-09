@@ -35,27 +35,31 @@
       div::after {
         content: "";
         position: absolute;
-        top: -1px;
-        height: 60px;
+        height: 70px;
         width: 150px;
         background: #243d83;
       }
       div:first-of-type {
+        &::before {
+          top: -1px;
+          left: 85px;
+        }
         &::after {
-          left: 0;
+          top: 201px;
+          right: 85px;
         }
       }
       div:last-of-type {
         &::before,
         &::after {
-          top: 105px;
+          top: 100px;
           transform: rotate(90deg);
         }
         &::before {
-          right: -45px;
+          right: -40px;
         }
         &::after {
-          left: -45px;
+          left: -40px;
         }
       }
     </style>
