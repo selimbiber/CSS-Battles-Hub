@@ -5,60 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2025/02/11</title>
     <style>
-        body {
-    min-height: 100dvh;
-    margin: 0;
-    background: #FBFDB7;
-    display: grid;
-    place-items: center;
-  }
-  main {
-    width: 280px;
-    height: 300px;
-    position: relative;
-    
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      right: 58px;
-      height: 120px;
-      width: 164px;
-      background: #FBFDB7;
-    }
-    &::after {
-      bottom: 0;
-    }
-  }
-  div:first-of-type {
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      box-sizing: border-box;
-      height: 150px;
-      width: 280px;
-      border: 60px solid;
-      border-color: #46BA67;
-    }
-    &::after {
-      bottom: 0;
-    }
-  }
-  div:last-of-type {
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      height: 120px;
-      width: 60px;
-      background: #D95362;
-    }
-    &::before {
-      bottom: 0;
-    }
-    &::after {
-      right: 0;
-    }
-  }
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        background: #fbfdb7;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        width: 280px;
+        height: 300px;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          right: 59px;
+          height: 120px;
+          width: 162px;
+          background: #fbfdb7;
+        }
+        &::after {
+          bottom: 0;
+        }
+      }
+      div:first-of-type {
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          box-sizing: border-box;
+          height: 155px;
+          width: 280px;
+          border: 60px solid;
+          border-color: #46ba67;
+        }
+        &::after {
+          bottom: 0;
+        }
+      }
+      div:last-of-type {
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 120px;
+          width: 60px;
+          background: #d95362;
+        }
+        &::before {
+          bottom: 0;
+        }
+        &::after {
+          right: 0;
+        }
+      }
     </style>
   </head>
   <body>
