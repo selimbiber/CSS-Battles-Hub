@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/02/24</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        background: #343d42;
+        display: grid;
+        place-items: center;
+      }
+      div:first-of-type {
+        height: 100px;
+        width: 100px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        margin-top: 50px;
+
+        &::before {
+          display: none;
+        }
+        &::after {
+          z-index: 1;
+          bottom: 40px;
+          left: 187px;
+        }
+      }
+      div:last-of-type {
+        margin-top: auto;
+        width: 400px;
+        height: 66px;
+        background: #328fc1;
+        position: relative;
+
+        &::before,
+        &::after {
+          bottom: 40px;
+        }
+        &::before {
+          left: -40px;
+        }
+        &::after {
+          right: -40px;
+        }
+      }
+      div::before,
+      div::after {
+        content: "";
+        position: absolute;
+        height: 160px;
+        width: 192px;
+        background: #343d42;
+        border-radius: 50%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+</html>
