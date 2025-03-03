@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/03/03</title>
+    <style>
+      body {
+        background-color: #eac049;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      div {
+        width: 160px;
+        height: 160px;
+        background-color: #343d42;
+        border-radius: 50%;
+        position: relative;
+        rotate: -110deg;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 115px;
+          height: 115px;
+          background-color: #eac049;
+          border-radius: 50%;
+          bottom: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
