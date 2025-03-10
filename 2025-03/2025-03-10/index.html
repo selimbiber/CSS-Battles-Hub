@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/03/10</title>
+    <style>
+      body,
+      div {
+        display: grid;
+        place-items: center;
+      }
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        background: #f58220;
+      }
+      div {
+        width: 180px;
+        height: 160px;
+        background: #ffffff;
+        transform: skewX(-21deg);
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          background: #f58220;
+          height: 70px;
+          width: 61px;
+        }
+        &::before {
+          top: 0;
+        }
+        &::after {
+          bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
