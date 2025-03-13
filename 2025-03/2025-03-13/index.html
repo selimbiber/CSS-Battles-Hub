@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025/03/13</title>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        background: #ffe8bd;
+        display: grid;
+        place-items: center;
+      }
+      div {
+        width: 240px;
+        height: 210px;
+        position: relative;
+        overflow-y: hidden;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          box-sizing: border-box;
+          height: 280px;
+          width: 140px;
+          border: 41px solid #31798f;
+          border-radius: 70px;
+        }
+        &::after {
+          right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
