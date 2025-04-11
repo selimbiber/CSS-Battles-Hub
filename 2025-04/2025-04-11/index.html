@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025/04/11</title>
+  <style>
+    body {
+      min-height: 100dvh;
+      margin: 0;
+      background: #A4C5BD;
+      display: grid;
+      place-items: center;
+    }
+
+    div {
+      width: 190px;
+      height: 140px;
+      background: #D96C7B;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+      }
+
+      &::before {
+        height: 100%;
+        width: 100px;
+        background: #8D424D;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      &::after {
+        height: 100px;
+        width: 30px;
+        background: #D96C7B;
+        border-left: 11px solid #8D424D;
+        box-sizing: border-box;
+        bottom: -100px;
+        right: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>
