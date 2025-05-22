@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025/05/22</title>
+  <style>
+    body {
+      min-height: 100dvh;
+      margin: 0;
+      background: #243D83;
+      display: grid;
+      place-items: center;
+    }
+
+    div {
+      position: absolute;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        height: 105px;
+        width: 75px;
+        background: #E3DCD1;
+        transform: skew(0deg, 46deg);
+      }
+
+      &::before {
+        top: -80px;
+        right: -105px;
+      }
+
+      &::after {
+        top: -25px;
+        left: -105px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>
