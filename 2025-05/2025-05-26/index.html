@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025/05/26</title>
+  <style>
+    body,
+    main,
+    div {
+      display: grid;
+      place-items: center;
+    }
+
+    body {
+      min-height: 100dvh;
+      margin: 0;
+      background: #186D37;
+    }
+
+    main {
+      width: 140px;
+      height: 140px;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        height: 140px;
+        width: 50px;
+        box-sizing: border-box;
+        border-top: 20px solid #48BF7D;
+        border-bottom: 20px solid #48BF7D;
+      }
+
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+
+    div::before,
+    div::after {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 100px;
+      background: #48BF7D;
+    }
+
+    div::before {
+      left: -65px;
+    }
+
+    div::after {
+      right: -65px;
+    }
+
+    div:first-child {
+
+      &::before,
+      &::after {
+        top: -35px;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+
+    div:last-child {
+
+      &::before,
+      &::after {
+        bottom: -35px;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div></div>
+    <div></div>
+  </main>
+</body>
+
+</html>
