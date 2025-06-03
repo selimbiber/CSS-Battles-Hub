@@ -20,21 +20,53 @@
       background: #C0D6E7;
       position: absolute;
       transform: rotate(315deg);
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+      }
     }
 
     .top {
       top: -30px;
+
+      &::before,
+      &::after {
+        bottom: 0;
+        border-left: 100.8px solid transparent;
+      }
+
+      &::before {
+        border-bottom: 100.8px solid #D95362;
+        transform: rotate(90deg);
+        left: 0;
+        z-index: 1;
+      }
+
+      &::after {
+        border-top: 100.5px solid #2D3464;
+        bottom: 0;
+      }
     }
 
     .bottom {
       bottom: -30px;
+
+      &::after {
+        height: 100px;
+        width: 100px;
+        background: #2D3464;
+        left: 100.8px;
+        top: -0.8px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div></div>
-  <div></div>
+  <div class="top"></div>
+  <div class="bottom"></div>
 </body>
 
 </html>
